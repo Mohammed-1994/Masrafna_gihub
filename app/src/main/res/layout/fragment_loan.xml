@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.services.loans_and_financing.LoanFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/services_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/loan_title"
+                style="@style/Titles_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/localization" />
+
+
+            <TextView
+                android:id="@+id/loan_text"
+                style="@style/hint_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan_title"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:text="@string/localization_text" />
+
+
+            <TextView
+                android:id="@+id/banks_do_loan"
+                style="@style/Titles_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan_text"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:text="@string/banks_do_localization" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/banks_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/banks_do_loan"
+                android:layout_marginTop="24dp"
+                tools:listitem="@layout/bank_item" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

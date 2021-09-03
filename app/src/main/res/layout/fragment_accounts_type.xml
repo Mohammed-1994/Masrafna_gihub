@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.services.accounts.AccountsTypeFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/sub_service_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/accounts_desc"
+                style="@style/hint_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:text="@string/account_desc" />
+
+
+            <LinearLayout
+                android:id="@+id/cards_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accounts_desc"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginTop="48dp"
+                android:orientation="vertical"
+                android:paddingVertical="16dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/saving_account"
+                    style="@style/normal_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@drawable/ripple_button_background"
+                    android:drawableLeft="@drawable/go_arrow"
+                    android:gravity="center"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="16dp"
+                    android:text="@string/saving_account" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/fixed_deposit_accounts"
+                    style="@style/normal_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/ripple_button_background"
+                    android:drawableLeft="@drawable/go_arrow"
+                    android:gravity="center"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="16dp"
+                    android:text="@string/fixed_deposit_accounts" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/time_deposit_accounts"
+                    style="@style/normal_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/ripple_button_background"
+                    android:drawableLeft="@drawable/go_arrow"
+                    android:gravity="center"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="16dp"
+                    android:text="@string/time_deposit_accounts" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/current_accounts"
+                    style="@style/normal_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/ripple_button_background"
+                    android:drawableLeft="@drawable/go_arrow"
+                    android:gravity="center"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="16dp"
+                    android:text="@string/current_accounts" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/certificate_deposit"
+                    style="@style/normal_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/ripple_button_background"
+                    android:drawableLeft="@drawable/go_arrow"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="16dp"
+                    android:text="@string/certificate_deposit" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

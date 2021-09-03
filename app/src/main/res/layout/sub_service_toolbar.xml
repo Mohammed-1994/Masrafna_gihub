@@ -1,0 +1,66 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@drawable/toolbar_back"
+    android:elevation="8dp"
+    android:padding="0dp"
+    app:titleTextAppearance="@style/buttons"
+    app:titleTextColor="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tt"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_dark" />
+
+        <ImageView
+            android:id="@+id/navigate_up"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+        <ImageView
+            android:id="@+id/drawer_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16dp"
+
+            android:src="@drawable/ic_baseline_menu_24" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Titles_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:text="@string/profile"
+            android:textColor="@color/white" />
+        <TextView
+            style="@style/Titles_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/navigate_up"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:textSize="12sp"
+            android:text="@string/back"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
+

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.onboarding.ThirdFragment">
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/splash_image2" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_centerHorizontal="true"
+            style="@style/Titles_font"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/iraqi_banks"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/hint_font"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="بالاضافة الى كافة المعلومات حول المصارف العراقية وأماكن الصرافات الآلية ونقاط البيع القريبة منك"
+            android:textColor="#5C5C5C"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/next_btn"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dots2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_btn"
+        style="@style/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/main_gradient"
+        android:backgroundTint="@null"
+        android:text="@string/next"
+        android:textColor="@color/white" />
+</RelativeLayout>

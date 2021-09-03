@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.navigation.contacts.ContactsFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true" />
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/call_us"
+                style="@style/Titles_font"
+                android:layout_marginTop="48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/call_us" />
+
+
+            <TextView
+                android:id="@+id/call_us_text"
+                style="@style/hint_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/call_us"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/call_us_text" />
+
+
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/call_us_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/phone_icon" />
+
+
+            <TextView
+                android:id="@+id/phone1"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="00964 771 170 2118" />
+
+
+            <TextView
+                android:id="@+id/phone2"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/phone1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+
+                android:text="00964 780 540 9005" />
+
+
+            <ImageView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/network_icon" />
+
+
+            <TextView
+                android:id="@+id/website_link"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/website"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="www.masrafna.com" />
+
+
+            <ImageView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/website_link"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/email_icon" />
+
+
+            <TextView
+                android:id="@+id/email_link"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="info@masrafna.com" />
+
+            <ImageView
+                android:id="@+id/locaion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_link"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/locaion_icon" />
+
+
+            <TextView
+                android:id="@+id/locaion_link"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/locaion"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Iraq - Baghdad - the station" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.services.letters_guarantee.LettersGuaranteeFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/services_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true" />
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/letters_of_guarantee" />
+
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/Titles_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true"
+                android:text="@string/letters_of_guarantee" />
+
+
+            <TextView
+                android:id="@+id/letters_of_guarantee_text"
+                style="@style/hint_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:text="@string/localization_text" />
+
+
+            <TextView
+                android:id="@+id/banks_do_guarantee"
+                style="@style/Titles_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/letters_of_guarantee_text"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:text="@string/banks_do_guarantee" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/banks_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/banks_do_guarantee"
+                android:layout_marginTop="24dp"
+                android:foregroundGravity="center"
+                tools:listitem="@layout/services_grid_item" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

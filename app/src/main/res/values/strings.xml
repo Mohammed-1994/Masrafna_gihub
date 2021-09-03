@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">مصرفنا</string>
+    <string name="have_an_account">لديك حساب؟ تسجيل الدخول</string>
+    <string name="confirm">تأكيد</string>
+    <string name="welcome_again">مرحباً بك مجدداً</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="password">كلمة السر</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_new_account">تسجيل حساب جديد</string>
+    <string name="create_new_account_details">سجل حساب جديد لتصلك كافة الاشعارات</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="last_name">الاسم الأخير</string>
+    <string name="confirm_password">تأكيد كلمة السر</string>
+    <string name="create_account">انشاء حساب</string>
+    <string name="confirm_the_code">تأكيد الرمز المرسل</string>
+    <string name="confirm_the_code_sent">الرجاء تأكيد الرمز المرسل اليك في رسالة نصية</string>
+    <string name="the_code">الرمز المرسل</string>
+    <string name="did_not_get_the_code">لم أستلم الرمز</string>
+    <string name="send_again">ارسل مرة أخرى</string>
+    <string name="welcome_text">تم تسجيل حسابك بنجاح في تطبيق مصرفنا, الرجاء الانتقال الى الصفحة الرئيسية للتعرف على التطبيق والاستفادة من خدماته.</string>
+    <string name="welcome_in_masrafna_title">مرحبا بك في تطبيق مصرفنا</string>
+    <string name="welcome_in_masrafna_text">دليلك الشامل والمتكامل لكل المصارف العراقية والخجنات الرئيسية المقدمة من المصارف للأفراد والشركات والأخبار العاليمة</string>
+    <string name="strart">ابدأ</string>
+    <string name="main_features">الخدمات الرئيسية</string>
+    <string name="next">التالي</string>
+    <string name="iraqi_banks">المصارف العراقية</string>
+    <string name="main_features_text">الان أصبح بامكانك التعرف على كافة الخدمات المصرفية وكل متطلبات القروض وفتح الحسابات</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="news">الأخبار</string>
+    <string name="news_text">وآخر الأخبار المالية والاقتصادية بالاضافة الى البحوث والدراسات العلمية</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="search_banks">ابحث عن مصرف</string>
+    <string name="contain_all_features">وتشمل جميع الخدمات المصرفية</string>
+    <string name="banks">المصارف</string>
+    <string name="see_iraqi_banks">تعرف على المصارف العراقية وخدماتتها</string>
+    <string name="more">المزيد</string>
+    <string name="articles">مقالات الكترونية</string>
+    <string name="articles_text">"من الشخصيات التي ساهمت في تطوير القطاع المصرفي العراقي والتي تقوم دائما بابتكار النماذج الجديدة لتطوير القطاع المصرفي اضافة الى المبادرات المستمرة التي تقدم الدعم المستمر لهذا القطاع "</string>
+    <string name="contact">تواصل</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="main">الرئيسية</string>
+    <string name="profile">الصفحة الشخصية</string>
+    <string name="name">الاسم</string>
+    <string name="dob">المواليد</string>
+    <string name="city">المحافظة</string>
+    <string name="challenges">التحديات والابداع</string>
+    <string name="challenges_text">"من الشخصيات التي ساهمت في تطوير القطاع المصرفي العراقي والتي تقوم دائما بابتكار النماذج الجديدة لتطوير القطاع المصرفي اضافة الى المبادرات المستمرة التي تقدم الدعم المستمر لهذا القطاعمن الشخصيات التي ساهمت في تطوير القطاع المصرفي العراقي والتي تقوم دائما بابتكار النماذج الجديدة لتطوير القطاع المصرفي اضافة الى المبادرات المستمرة التي تقدم الدعم المستمر لهذا القطاع من الشخصيات التي ساهمت في تطوير القطاع المصرفي العراقي والتي تقوم دائما بابتكار النماذج الجديدة لتطوير القطاع المصرفي اضافة الى المبادرات المستمرة التي تقدم الدعم المستمر لهذا القطاع من الشخصيات التي ساهمت في تطوير القطاع المصرفي العراقي والتي تقوم دائما بابتكار النماذج الجديدة لتطوير القطاع المصرفي اضافة الى المبادرات المستمرة التي تقدم الدعم المستمر لهذا القطاع من الشخصيات التي ساهمت في تطوير القطاع المصرفي العراقي والتي تقوم دائما بابتكار النماذج الجديدة لتطوير القطاع المصرفي اضافة الى المبادرات المستمرة التي تقدم الدعم المستمر لهذا القطاع من الشخصيات التي ساهمت في تطوير القطاع المصرفي العراقي والتي تقوم دائما بابتكار النماذج الجديدة لتطوير القطاع المصرفي اضافة الى المبادرات المستمرة التي تقدم الدعم المستمر لهذا القطاع من الشخصيات التي ساهمت في تطوير القطاع المصرفي العراقي والتي تقوم دائما بابتكار النماذج الجديدة لتطوير القطاع المصرفي اضافة الى المبادرات المستمرة التي تقدم الدعم المستمر لهذا القطاع  "</string>
+    <string name="meet_masrafna">تعرف على مصرفنا</string>
+    <string name="first">أولاً</string>
+    <string name="first_text">الانترنت، اثر عظيم بحيث يعد ثورة جديدة متطورة في مجال الاعلام و الاتصالات، فالانترنت غير الكثير من المفاهيم الخاصة بالمكان و الزمان. ولم تعد العلاقة بين الفرد ووسيلة الاعلام علاقة المتلقي الذي لا يوجد له دور سوى ان يطلّع على ما تقدمه</string>
+    <string name="second">ثانياً</string>
+    <string name="third">ثالثاً</string>
+    <string name="fourth">رابعاً</string>
+    <string name="terms">شروط الخدمة</string>
+    <string name="call_us">التواصل معنا</string>
+    <string name="call_us_text">الان بإمكانكم التواصل معنا على المواقع التالية ادناهوتتوفر لدينا خدمة الاجابة على استفساراتكم</string>
+
+
+    <!--  services_IDs  -->
+    <string name="other_services_id">other_services</string>
+    <string name="online_banking_services_id">online_banking_services</string>
+    <string name="western_union_id">western_union</string>
+    <string name="external_funding_icon_id">external_funding_icon</string>
+    <string name="letters_of_guarantee_id">letters_of_guarantee</string>
+    <string name="loans_and_financing_id">loans_and_financing</string>
+    <string name="localization_id">localization</string>
+    <string name="electronic_cards_id">electronic_cards</string>
+    <string name="deposit_accounts_id">deposit_accounts</string>
+
+
+    <string name="localization">التوطين</string>
+    <string name="localization_text">"الانترنت، اثر عظيم بحيث يعد ثورة جديدة متطورة في مجال الاعلام و الاتصالات، فالانترنت غير الكثير من المفاهيم الخاصة بالمكان و الزمان. ولم تعد العلاقة بين الفرد ووسيلة الاعلام علاقة المتلقي الذي لا يوجد له دور سوى ان يطلّع على ما تقدمه "</string>
+    <string name="banks_do_localization">المصارف التي تقدم خدمة التوطين</string>
+    <string name="localization_bank_title">التوطين في البنك الأهلي العراقي</string>
+    <string name="localization_bank_desc">"الانترنت، اثر عظيم بحيث يعد ثورة جديدة متطورة في مجال الاعلام و الاتصالات، فالانترنت غير الكثير من المفاهيم الخاصة بالمكان و الزمان. ولم تعد العلاقة بين الفرد ووسيلة الاعلام علاقة المتلقي الذي لا يوجد له دور سوى ان يطلّع على ما تقدمه "</string>
+    <string name="bank_loans">القروض المصرفية</string>
+    <string name="islamic_financing">التمويلات الاسلامية</string>
+    <string name="loans_and_financing">القروض والتمويلات</string>
+    <string name="loan_financing_chose">اختر القروض المصرفية او التمويلات الاسلامية وتمتع بالخدمات المقدمة من المصارف العراقية</string>
+    <string name="personal_loans">قروض الأفراد</string>
+    <string name="company_loans">قروض الشركات</string>
+    <string name="personal_financing">تمويلات الأفراد</string>
+    <string name="company_financing">تمويلات الشركات</string>
+    <string name="personal_loans_financing">قروض وتمويلات الأفراد</string>
+    <string name="electronic_cards">البطاقات الالكترونية</string>
+    <string name="debit_cards">البطاقات المدينة (الدفع المباشر)</string>
+    <string name="prepaid_cards">بطاقات الدفع المسبق</string>
+    <string name="credit_card">بطاقات دائنة</string>
+    <string name="banks_do_cards">المصارف التي تقدم خدمة البطاقات الالكترونية</string>
+    <string name="banks_do_accounts">المصارف التي تقدم هذا النوع من الحسابات</string>
+    <string name="deposit_accounts">الحسابات المصرفية</string>
+    <string name="saving_account">حساب التوفير والادخار</string>
+    <string name="fixed_deposit_accounts">حسابات الودائع الثابتة</string>
+    <string name="time_deposit_accounts">حسابات الودائع الوقتية</string>
+    <string name="certificate_deposit">شهادة الايداع</string>
+    <string name="current_accounts">حسابات جارية</string>
+    <string name="account_desc">تعرف على الحسابات المصرفية للافراد والشركات ومميزاتها</string>
+    <string name="credits_desc">تعرف على انواع الاعتمادات للافراد والشركات ومميزاتها</string>
+    <string name="external_funding">التمويلات الخارجية (الاعتمادات)</string>
+    <string name="documentary_credits">الاعتمادات المستندية</string>
+    <string name="external_remittances">الحوالات الخارجية</string>
+    <string name="letters_of_guarantee">خطابات الضمان</string>
+    <string name="banks_do_guarantee">المصارف التي تقدم خطابات الضمان</string>
+    <string name="western_union">الويسترن يونيون</string>
+    <string name="banks_do_western_union">المصارف التي تقدم الحوالات عن طريق الويسترن يونيون</string>
+    <string name="transfer_via_western_union">التحويل عن طريق ويسترن يونيون</string>
+    <string name="online_service">الخدمات المصرفية عبر الانترنت</string>
+    <string name="banks_do_online_service">المصارف التي تقدم خدمات عبر الانترنت</string>
+    <string name="other_services_from_banks">خدمات مصرفية مقدمة من المصارف العراقية</string>
+    <string name="ratified_instruments">الصكوك المصدقة والسفاتج</string>
+    <string name="investments">الاستثمارات</string>
+    <string name="electronic_clearing_instruments">صكوك المقاصة الالكترونية</string>
+    <string name="establishing_companies">تأسيس الشركات والاكتتاب بأسمها</string>
+    <string name="account_statements">كشوفات الحساب</string>
+    <string name="foreign_remittances">الحوالات الخارجيةSWIFT</string>
+    <string name="internal_remittances">الحوالات الداخلية RTGS</string>
+    <string name="other_bank_services">خدمات مصرفية أخرى</string>
+    <string name="banks_do">المصارف التي تقدم خدمة</string>
+    <string name="chose_bank">اختر المصرف الذي ترغب به</string>
+    <string name="see_bank_services">وتعرف على كافة الخدمات المقدمة من قبله</string>
+    <string name="about_the_bank">عن المصرف</string>
+    <string name="address">العنوان</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="contact_no">رقم التواصل</string>
+    <string name="website">الموقع الالكتروني</string>
+    <string name="access_token">access_token</string>
+    <string name="access_token_preferences">access_token_preferences</string>
+    <string name="enter">دخول</string>
+    <string name="logout_check">هل تريد بالتأكيد تسجيل الخروج</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="cancel">إلغاء</string>
+    <string name="forgot_password">نسيت كلمة المرور؟</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="enter_your_phone">ادخل رقم الهاتف لتصلك رسالة التأكيد</string>
+    <string name="back">رجوع</string>
+    <string name="contact_info">معلومات التواصل</string>
+    <string name="first_time_preference">first time preference</string>
+    <string name="first_time_finished">first time finished</string>
+    <string name="is_account_verified">is account verified</string>
+
+
+    <string-array name="planets_array">
+        <item>بغداد</item>
+        <item>الموصل</item>
+        <item>الأنبار</item>
+        <item>كركوك</item>
+        <item>الفالوجة</item>
+        <item>كربلاء</item>
+    </string-array>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    tools:context=".ui.services.online.OnlineServiceFragment">
+
+
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progress_bar"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:elevation="16dp"
+        android:visibility="gone"
+        app:SpinKit_Color="#01BBFC" />
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/services_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true" />
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="16dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/online_banking_services" />
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Titles_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:text="@string/online_service" />
+
+
+        <TextView
+            android:id="@+id/online_service_text"
+            style="@style/hint_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:text="@string/localization_text" />
+
+
+        <TextView
+            android:id="@+id/banks_do_online_service"
+            style="@style/Titles_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/online_service_text"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:text="@string/banks_do_online_service" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/banks_rv"
+            android:foregroundGravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/banks_do_online_service"
+            android:layout_marginTop="24dp"
+            tools:listitem="@layout/services_grid_item" />
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

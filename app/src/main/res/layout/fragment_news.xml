@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.navigation.news.NewsFragment">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/services_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true" />
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/progress_bar"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="16dp"
+                android:visibility="visible"
+                app:SpinKit_Color="#01BBFC" />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/news_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                     />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/title_tv"
+                style="@style/normal_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card"
+                android:gravity="center"
+
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/hint_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_tv"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/desc"
+                style="@style/hint_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

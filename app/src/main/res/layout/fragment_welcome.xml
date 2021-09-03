@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.loging.signup.WelcomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/checked"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/check" />
+
+        <TextView
+            android:id="@+id/welcome_tv"
+            style="@style/Titles_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checked"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:text="أهلا شيماء"
+            android:textColor="@color/black" />
+
+        <TextView
+            style="@style/hint_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome_tv"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:text="@string/welcome_text"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/enter"
+        style="@style/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/main_gradient"
+        android:text="@string/enter" />
+
+</RelativeLayout>

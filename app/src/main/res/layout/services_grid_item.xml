@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:paddingHorizontal="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    app:cardCornerRadius="24dp"
+    android:layout_margin="8dp"
+
+    android:clipToPadding="true"
+    android:padding="4dp"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/main_categores_background"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/external_funding_icon" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/normal_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+
+            android:text="حسابات الودائع" />
+
+        <TextView
+            android:id="@+id/desc"
+            style="@style/hint_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:gravity="center"
+            android:text="حسابات الودائع"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

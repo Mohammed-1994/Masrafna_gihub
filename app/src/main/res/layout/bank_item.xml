@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:focusable="true"
+
+    android:paddingHorizontal="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:clickable="true"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+
+        app:cardCornerRadius="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_button_background">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bank_image" />
+
+            <ImageView
+                android:id="@+id/favorite_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/favorite_false"
+                android:layout_margin="8dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/normal_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingHorizontal="8dp"
+        android:text="حسابات الودائع" />
+
+
+</RelativeLayout>

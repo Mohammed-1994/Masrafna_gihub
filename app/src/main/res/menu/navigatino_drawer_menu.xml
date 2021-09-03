@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="الرئيسية" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user_minus"
+            android:title="الصفحة الشخصية" />
+        <item
+            
+            android:id="@+id/nav_info"
+            android:icon="@drawable/info"
+            android:title="تعرف على مصرفنا" />
+        <item
+            android:id="@+id/favorite_menu_item"
+            android:icon="@drawable/marked"
+            android:title="مفضلاتي" />
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/terms_icon"
+            android:title="شروط الخدمة" />
+        <item
+            android:id="@+id/share_menu_item"
+            android:icon="@drawable/icon_share"
+            android:title="مشاركة" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/icon_log"
+            android:title="تسجيل خروج" />
+    </group>
+</menu>

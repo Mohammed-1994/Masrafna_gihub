@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.loging.signup.SignupFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progress_bar"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="16dp"
+            android:visibility="gone"
+            app:SpinKit_Color="#01BBFC"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/create_new_account"
+            style="@style/Titles_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/create_new_account"
+            android:textColor="#031248"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_new_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            style="@style/hint_font"
+            android:layout_marginBottom="48dp"
+            android:text="@string/create_new_account_details" />
+
+
+        <EditText
+            android:id="@+id/name_et"
+            style="@style/hint_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@null"
+            android:gravity="center"
+            android:hint="الاسم الثلاثي"
+            android:inputType="text"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/phone_no_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_et"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/edit_text_background"
+            style="@style/hint_font"
+            android:backgroundTint="@null"
+            android:gravity="center"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/password_et"
+            style="@style/hint_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_no_et"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@null"
+            android:gravity="center"
+            android:hint="الرمز السري"
+            android:inputType="textPassword"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/confirm_password_et"
+            style="@style/hint_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_et"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/edit_text_background"
+            android:backgroundTint="@null"
+            android:gravity="center"
+            android:hint="اعادة كتابة الرمز السري"
+            android:inputType="textPassword"
+            android:padding="16dp" />
+
+
+        <CheckBox
+            android:id="@+id/agree_check"
+            style="@style/hint_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@id/confirm_password_et"
+            android:layout_centerHorizontal="true"
+            android:text="موافقة على شروط الخدمة والخصوصية" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/create_btn"
+            style="@style/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/agree_check"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/main_gradient"
+            android:backgroundTint="@null"
+            android:text="@string/create_account"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/have_account_tv"
+            style="@style/hint_font"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:text="@string/have_an_account" />
+
+    </RelativeLayout>
+</ScrollView>

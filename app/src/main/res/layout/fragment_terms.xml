@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.navigation.terms.TermsFragment">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginTop="48dp">
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/progress_bar"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:elevation="16dp"
+                android:visibility="gone"
+                app:SpinKit_Color="#01BBFC" />
+            <TextView
+                android:id="@+id/first"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/first"
+                android:textColor="#00BDA5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/first_text"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/first"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:padding="8dp"
+                android:text="@string/first_text" />
+
+            <TextView
+                android:id="@+id/second"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/first_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="24dp"
+                android:text="@string/second"
+                android:textColor="#00BDA5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/second_text"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/second"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:padding="8dp"
+                android:text="@string/first_text" />
+
+            <TextView
+                android:id="@+id/third"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/second_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="24dp"
+                android:text="@string/third"
+                android:textColor="#00BDA5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/third_text"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/third"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="@string/first_text" />
+
+            <TextView
+                android:id="@+id/fourth"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/third_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="24dp"
+                android:text="@string/fourth"
+                android:textColor="#00BDA5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fourth_text"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fourth"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:padding="8dp"
+                android:text="@string/first_text" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

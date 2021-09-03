@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.services.loans_and_financing.LoansListFragment">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/services_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/loans_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/loans_item"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/progress_bar"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:elevation="16dp"
+                android:visibility="visible"
+                app:SpinKit_Color="#01BBFC" />
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

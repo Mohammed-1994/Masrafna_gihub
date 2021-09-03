@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.masrafna.ui.navigation.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_fragment_home_to_fragment_news"
+            app:destination="@id/nav_news_list"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_banksListFragment"
+            app:destination="@id/nav_banksListFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_services_list"
+            app:destination="@id/nav_services_list"
+
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+        <action
+            android:id="@+id/action_fragment_home_to_fragment_notification"
+            app:destination="@id/nav_article_details"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.masrafna.ui.navigation.contacts.ContactsFragment"
+        android:label="@string/contact"
+        tools:layout="@layout/fragment_contacts" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.masrafna.ui.navigation.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_notification_list"
+        android:name="com.example.masrafna.ui.navigation.notifications.NotificationsListFragment"
+        android:label="@string/notifications"
+        tools:layout="@layout/fragment_notifications_list">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.masrafna.ui.navigation.info.InfoFragment"
+        android:label="@string/meet_masrafna"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/nav_terms"
+        android:name="com.example.masrafna.ui.navigation.terms.TermsFragment"
+        android:label="@string/terms"
+        tools:layout="@layout/fragment_terms" />
+    <fragment
+        android:id="@+id/nav_news_list"
+        android:name="com.example.masrafna.ui.navigation.news.NewsListFragment"
+        android:label="@string/news"
+        tools:layout="@layout/fragment_news_list">
+        <action
+            android:id="@+id/action_fragment_news_list_to_fragment_news"
+            app:destination="@id/nav_news"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"></action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.example.masrafna.ui.navigation.news.NewsFragment"
+        android:label="@string/news"
+        tools:layout="@layout/fragment_news">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_article_details"
+        android:name="com.example.masrafna.ui.navigation.home.ArticleFragment"
+        android:label="@string/articles"
+        tools:layout="@layout/fragment_notification">
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_banksListFragment"
+        android:name="com.example.masrafna.ui.navigation.banks.BanksListFragment"
+        android:label="@string/banks"
+        tools:layout="@layout/fragment_banks_list">
+        <action
+            android:id="@+id/action_nav_banksListFragment_to_nav_bankDetailsFragment"
+            app:destination="@id/nav_bankDetailsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_bankDetailsFragment"
+        android:name="com.example.masrafna.ui.navigation.banks.BankDetailsFragment"
+        tools:layout="@layout/fragment_bank_details" >
+        <action
+            android:id="@+id/action_nav_bankDetailsFragment_to_branchesFragment"
+            app:destination="@id/branchesFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+
+        <action
+            android:id="@+id/action_nav_bankDetailsFragment_to_loanListFragment"
+            app:destination="@id/nav_fragment_personal_loans_list"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.masrafna.ui.navigation.logout.LogoutFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_services_list"
+        android:name="com.example.masrafna.ui.services.main.ServicesCategoriesFragment"
+
+        android:label="@string/main_features"
+        tools:layout="@layout/fragment_services_categories">
+
+
+        <action
+            android:id="@+id/action_to_localization_fragment"
+            app:destination="@id/nav_localization"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+        <action
+            android:id="@+id/action_from_service_list_to_loaning_financing_fragment"
+            app:destination="@id/nav_fragment_loans_financing"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+        <action
+            android:id="@+id/action_from_service_list_to_cards_fragment"
+            app:destination="@id/nav_cards_fragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_services_list_to_accountsTypeFragment"
+            app:destination="@id/nav_accounts_type"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_nav_services_list_to_nav_creditFragment"
+            app:destination="@id/nav_creditFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_nav_services_list_to_nav_guaranteeFragment"
+            app:destination="@id/nav_guaranteeFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_nav_services_list_to_nav_westernUnionFragment"
+            app:destination="@id/nav_westernUnionFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_nav_services_list_to_nav_onlineServiceFragment"
+            app:destination="@id/nav_onlineServiceFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_nav_services_list_to_nav_otherServicesFragment"
+            app:destination="@id/nav_otherServicesFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_localization"
+        android:name="com.example.masrafna.ui.services.localization.LocalizationFragment"
+        android:label="@string/localization"
+        tools:layout="@layout/fragment_localization">
+
+        <action
+            android:id="@+id/action_to_localization_bank_fragment"
+            app:destination="@id/nav_bank_localization"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left">
+
+        </action>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_bank_localization"
+        android:name="com.example.masrafna.ui.services.localization.BankLocalizationFragment"
+        android:label="@string/main_features"
+        tools:layout="@layout/fragment_bank_localization">
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_fragment_loans_financing"
+        android:name="com.example.masrafna.ui.services.loans_and_financing.LoansFinancingFragment"
+        android:label="@string/loans_and_financing"
+        tools:layout="@layout/fragment_loans_financing">
+
+        <action
+            android:id="@+id/action_from_loans_financing_to_loans_type_fragment"
+            app:destination="@id/nav_fragment_loans_type"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left">
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_fragment_personal_loans_list"
+        android:name="com.example.masrafna.ui.services.loans_and_financing.LoansListFragment"
+        android:label="@string/loans_and_financing"
+        tools:layout="@layout/fragment_loans_list">
+
+        <action
+            android:id="@+id/action_loan_list_fragment_to_viewPagerDetailsFragment"
+            app:destination="@id/nav_bankViewPagerDetailsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+        <action
+            android:id="@+id/action_from_personal_loans_list_to_loan_details_fragment"
+            app:destination="@id/nav_personal_loan_details_fragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_fragment_loans_type"
+        android:name="com.example.masrafna.ui.services.loans_and_financing.LoansTypeFragment"
+        android:label="@string/loans_and_financing"
+        tools:layout="@layout/fragment_loans__type">
+
+        <action
+            android:id="@+id/action_from_loans_type_to_personal_loans_fragment"
+            app:destination="@id/nav_fragment_personal_loans_list"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_personal_loan_fragment"
+        android:name="com.example.masrafna.ui.services.loans_and_financing.LoanFragment"
+        android:label="fragment_personal_loan"
+        tools:layout="@layout/fragment_loan">
+
+        <action
+            android:id="@+id/action_from_personal_loan_to_loan_details_fragment"
+            app:destination="@id/nav_personal_loan_details_fragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_personal_loan_details_fragment"
+        android:name="com.example.masrafna.ui.services.loans_and_financing.LoanDetailsFragment"
+        android:label="@string/loans_and_financing"
+        tools:layout="@layout/fragment_loan_details">
+        <action
+            android:id="@+id/action_cards_fragment_to_cardDetailsFragment"
+            app:destination="@id/nav_bankViewPagerDetailsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_cards_fragment"
+        android:name="com.example.masrafna.ui.services.cards.CardTypeFragment"
+        android:label="@string/electronic_cards"
+        tools:layout="@layout/fragment_card_type">
+        <action
+            android:id="@+id/action_cards_fragment_to_cardDetailsFragment"
+            app:destination="@id/nav_card_details"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_card_details"
+        android:name="com.example.masrafna.ui.services.cards.CardDetailsFragment"
+        android:label="@string/electronic_cards"
+        tools:layout="@layout/fragment_card_details" />
+    <fragment
+        android:id="@+id/nav_accounts_type"
+        android:name="com.example.masrafna.ui.services.accounts.AccountsTypeFragment"
+        android:label="@string/deposit_accounts"
+        tools:layout="@layout/fragment_accounts_type">
+        <action
+            android:id="@+id/action_nav_accounts_type_to_nav_accountDetails"
+            app:destination="@id/nav_accountDetails"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_accountDetails"
+        android:name="com.example.masrafna.ui.services.accounts.AccountDetailsFragment"
+        android:label="@string/deposit_accounts"
+        tools:layout="@layout/fragment_account_details" />
+    <fragment
+        android:id="@+id/nav_creditFragment"
+        android:name="com.example.masrafna.ui.services.credits.CreditsFragment"
+        android:label="@string/external_funding"
+        tools:layout="@layout/fragment_credits">
+        <action
+            android:id="@+id/action_nav_creditFragment_to_nav_creditsTypeFragment"
+            app:destination="@id/nav_creditsTypeFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_creditsTypeFragment"
+        android:name="com.example.masrafna.ui.services.credits.CreditsTypeFragment"
+        android:label="@string/external_funding"
+        tools:layout="@layout/fragment_credits_type" />
+    <fragment
+        android:id="@+id/nav_guaranteeFragment"
+        android:name="com.example.masrafna.ui.services.letters_guarantee.LettersGuaranteeFragment"
+        android:label="@string/letters_of_guarantee"
+        tools:layout="@layout/fragment_letters_guarantee" />
+    <fragment
+        android:id="@+id/nav_westernUnionFragment"
+        android:name="com.example.masrafna.ui.services.westernunion.WesternUnionFragment"
+        android:label="@string/western_union"
+        tools:layout="@layout/fragment_western_union">
+        <action
+            android:id="@+id/action_nav_westernUnionFragment_to_nav_westernUnionDetailsFragment"
+            app:destination="@id/nav_westernUnionDetailsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_westernUnionDetailsFragment"
+        android:name="com.example.masrafna.ui.services.westernunion.WesternUnionDetailsFragment"
+        android:label="@string/western_union"
+        tools:layout="@layout/fragment_western_union_details" />
+    <fragment
+        android:id="@+id/nav_onlineServiceFragment"
+        android:name="com.example.masrafna.ui.services.online.OnlineServiceFragment"
+        android:label="@string/online_service"
+        tools:layout="@layout/fragment_online_service">
+        <action
+            android:id="@+id/action_nav_onlineServiceFragment_to_onlineServicesDetailsFragment"
+            app:destination="@id/onlineServicesDetailsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/onlineServicesDetailsFragment"
+        android:name="com.example.masrafna.ui.services.online.OnlineServicesDetailsFragment"
+        android:label="@string/online_service"
+        tools:layout="@layout/fragment_online_services_details" />
+    <fragment
+        android:id="@+id/nav_otherServicesFragment"
+        android:name="com.example.masrafna.ui.services.others.OtherServicesFragment"
+        android:label="@string/other_bank_services"
+        tools:layout="@layout/fragment_other_services">
+
+        <action
+            android:id="@+id/action_nav_otherServicesFragment_to_nav_banksServiceFragment"
+            app:destination="@id/nav_banksServiceFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_banksServiceFragment"
+        android:name="com.example.masrafna.ui.services.others.BanksServiceFragment"
+        android:label="@string/other_bank_services"
+        tools:layout="@layout/fragment_banks_service">
+        <action
+            android:id="@+id/action_nav_banksServiceFragment_to_nav_serviceDetailsFragment"
+            app:destination="@id/nav_serviceDetailsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_serviceDetailsFragment"
+        android:name="com.example.masrafna.ui.services.others.ServiceDetailsFragment"
+        android:label="@string/other_bank_services"
+        tools:layout="@layout/fragment_service_details" />
+    <fragment
+        android:id="@+id/branchesFragment"
+        android:name="com.example.masrafna.ui.navigation.banks.branches.BranchesFragment"
+        android:label="fragment_brances"
+        tools:layout="@layout/fragment_brances" />
+    <fragment
+        android:id="@+id/nav_bankViewPagerDetailsFragment"
+        android:name="com.example.masrafna.ui.services.loans_and_financing.viewPager.BankViewPagerDetailsFragment"
+        android:label="fragment_bank_view_pager_details"
+        tools:layout="@layout/fragment_bank_view_pager_details" />
+</navigation>

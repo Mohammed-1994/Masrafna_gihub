@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.services.loans_and_financing.LoanDetailsFragment">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/services_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/loan_title"
+                style="@style/Titles_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="start"
+                android:text="قرض افراد 1"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/loan_text"
+                style="@style/normal_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan_title"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="start"
+                android:padding="16dp"
+                />
+
+            <TextView
+                android:id="@+id/available_banks"
+                style="@style/Titles_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan_text"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="المصارف التي تقدم" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/available_banks_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/available_banks"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:listitem="@layout/bank_item" />
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progress_bar"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:elevation="16dp"
+        android:visibility="visible"
+        app:SpinKit_Color="#01BBFC" />
+</RelativeLayout>

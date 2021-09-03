@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.services.credits.CreditsFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/sub_service_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/credits_desc"
+        style="@style/hint_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/credits_desc" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/documentary_credits"
+        style="@style/normal_font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/credits_desc"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/ripple_button_background"
+        android:drawableLeft="@drawable/go_arrow"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
+        android:text="@string/documentary_credits" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/external_remittances"
+        style="@style/normal_font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/documentary_credits"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ripple_button_background"
+        android:drawableLeft="@drawable/go_arrow"
+        android:paddingHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="16dp"
+        android:text="@string/external_remittances" />
+
+
+</RelativeLayout>

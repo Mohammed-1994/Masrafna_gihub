@@ -1,0 +1,157 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bank_details_snippet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/bank_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginVertical="16dp"
+        android:background="@drawable/ripple_button_background"
+        android:contentDescription="bank image"
+        android:src="@drawable/bank_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <TextView
+        android:id="@+id/about"
+        style="@style/Titles_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/about_the_bank"
+        android:textColor="#1797E8"
+        app:layout_constraintRight_toLeftOf="@id/bank_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/about_text"
+        style="@style/normal_font"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxLines="4"
+        android:padding="8dp"
+        android:text="@string/localization_bank_desc"
+        android:textSize="14sp"
+        app:layout_constraintRight_toLeftOf="@+id/bank_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about" />
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/normal_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/locaion_icon"
+        android:drawablePadding="8dp"
+        android:text="@string/address"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_image" />
+
+    <TextView
+        android:id="@+id/address_text"
+        style="@style/normal_font"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:gravity=""
+        android:layout_marginRight="8dp"
+        android:paddingLeft="8dp"
+        android:text="شارع الوحدات بجانب المفترق الكبير شارع الوحدات بجانب المفترق الكبير "
+        app:layout_constraintLeft_toRightOf="@+id/email_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <TextView
+        android:id="@+id/email"
+        style="@style/normal_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:drawableLeft="@drawable/email_icon"
+        android:drawablePadding="16dp"
+        android:text="@string/email"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_image" />
+
+    <TextView
+        android:id="@+id/email_text"
+        style="@style/normal_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="4dp"
+        android:gravity="left"
+        android:text="info@masrafna.com"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/about_text"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/phone"
+        style="@style/normal_font"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableRight="@drawable/phone_icon"
+        android:drawablePadding="8dp"
+        android:text="@string/contact_no"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_text" />
+
+    <TextView
+        android:id="@+id/phone_text"
+        style="@style/normal_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="1234568"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <TextView
+        android:id="@+id/website"
+        style="@style/normal_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableLeft="@drawable/network_icon"
+        android:drawablePadding="16dp"
+        android:text="@string/website"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_text" />
+
+    <TextView
+        android:id="@+id/website_text"
+        style="@style/normal_font"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="www.masrafna.com"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/phone_text"
+        app:layout_constraintTop_toBottomOf="@+id/website" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

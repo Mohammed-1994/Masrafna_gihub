@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.services.loans_and_financing.viewPager.AboutLoanFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/about_loan_title"
+            style="@style/Titles_font"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="حول القرض" />
+
+        <TextView
+            android:id="@+id/about_loan_text"
+            style="@style/normal_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_loan_title"
+            android:padding="16dp"
+            android:text="من الشخصيات التي ساهمت في تطوير القطاع المصرفي العراقي والتي تقوم دائما بابتكار النماذج الجديدة لتطوير القطاع المصرفي اضافة الى المبادرات المستمرة التي تقدم الدعم المستمر لهذا القطاعمن الشخصيات التي ساهمت في تطوير القطاع المصرفي العراقي والتي تقوم دائما بابتكار النماذج الجديدة لتطوير القطاع المصرفي اضافة ال" />
+
+        <RelativeLayout
+            android:id="@+id/loan_bound_layout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/about_loan_text"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/ripple_button_background">
+
+
+            <TextView
+                android:id="@+id/loan_bound"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="16dp"
+                android:text="حدود مبلغ القرض" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/loan_bound"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/about_loan_back"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/loan_bound_value"-->
+                <!--                    style="@style/Titles_font"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_alignParentTop="true"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    android:layout_marginTop="4dp"-->
+                <!--                    android:text="3-10"-->
+                <!--                    android:textColor="@color/white" />-->
+
+                <TextView
+                    android:id="@+id/loan_bound_value"
+                    style="@style/hint_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="24dp"
+                    android:text="layout_alignParentRightlayout_alignParentRight"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loan_bound_layout"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/loan_benefit_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_button_background">
+
+                <TextView
+                    android:id="@+id/benefit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="الفائدة" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/benefit_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/about_loan_back"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/loan_benefit_value"-->
+<!--                        style="@style/Titles_font"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:text="3-10"-->
+<!--                        android:textColor="@color/white" />-->
+
+                    <TextView
+                        android:id="@+id/loan_benefit_value"
+                        style="@style/Titles_font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="%8"
+
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/loan_period_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_button_background">
+
+                <TextView
+                    android:id="@+id/period_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="مدة القرض" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/period_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/about_loan_back"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/loan_period_value"
+                        style="@style/Titles_font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="4dp"
+                        android:text="6 سنوات"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/warranties"
+            style="@style/Titles_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:text="ضمانات القرض"
+            android:textColor="#55BAA6" />
+
+        <TextView
+            android:id="@+id/warranties_text"
+            style="@style/Titles_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warranties"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="ضمانات القرض" />
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

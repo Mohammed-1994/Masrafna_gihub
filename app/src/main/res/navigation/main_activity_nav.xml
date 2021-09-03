@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.masrafna.ui.loging.login.LoginFragment"
+        android:label="login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_nav_login_to_resetPasswordFragment"
+            app:destination="@id/nav_resetPasswordFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_nav_login_to_nav_confirmCodeFragment"
+            app:destination="@id/nav_confirmCodeFragment"
+            app:popUpTo="@+id/nav_confirmCodeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_signup"
+        android:name="com.example.masrafna.ui.loging.signup.SignupFragment"
+        android:label="signup"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_nav_signup_to_nav_confirmCodeFragment"
+            app:destination="@id/nav_confirmCodeFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+
+        <action
+            android:id="@+id/action_nav_signup_to_nav_loginFragment"
+            app:destination="@id/nav_login"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popUpTo="@+id/nav_login"
+            app:popUpToInclusive="true"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_confirmCodeFragment"
+        android:name="com.example.masrafna.ui.loging.signup.ConfirmCodeFragment"
+        android:label="confirm code"
+        tools:layout="@layout/fragment_confirm_code">
+        <action
+            android:id="@+id/action_nav_confirmCodeFragment_to_nav_welcomeFragment"
+            app:destination="@id/nav_welcomeFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_nav_confirmCodeFragment_to_nav_login"
+            app:destination="@id/nav_login"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_welcomeFragment"
+        android:name="com.example.masrafna.ui.loging.signup.WelcomeFragment"
+        android:label="welcome"
+        tools:layout="@layout/fragment_welcome" />
+    <fragment
+        android:id="@+id/nav_resetPasswordFragment"
+        android:name="com.example.masrafna.ui.loging.reset_pass.ResetPasswordFragment"
+        android:label="@string/reset_password"
+        tools:layout="@layout/fragment_reset_password">
+        <action
+            android:id="@+id/action_nav_resetPasswordFragment_to_nav_login"
+            app:destination="@id/nav_login"
+            app:popUpTo="@+id/nav_login"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

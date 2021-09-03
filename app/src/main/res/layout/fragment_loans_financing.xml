@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.services.loans_and_financing.LoansFinancingFragment">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/services_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/loans_and_financing" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/Titles_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="@string/loans_and_financing" />
+
+            <TextView
+                android:id="@+id/loan_financing_chose"
+                style="@style/hint_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:text="@string/loan_financing_chose" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan_financing_chose"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginTop="48dp"
+                android:orientation="vertical"
+                android:paddingVertical="16dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bank_loans"
+                    style="@style/normal_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/ripple_button_background"
+                    android:drawableLeft="@drawable/go_arrow"
+                    android:gravity="center"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="16dp"
+                    android:text="@string/bank_loans" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/islamic_financing"
+                    style="@style/normal_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ripple_button_background"
+                    android:drawableLeft="@drawable/go_arrow"
+                    android:gravity="center"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="16dp"
+                    android:text="@string/islamic_financing" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

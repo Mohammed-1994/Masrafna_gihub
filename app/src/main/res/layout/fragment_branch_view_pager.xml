@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.navigation.banks.branches.BranchViewPagerFragment">
+
+
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progress_bar"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="16dp"
+        android:visibility="visible"
+        app:SpinKit_Color="#01BBFC" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Titles_font"
+        android:layout_alignParentTop="true"
+        android:id="@+id/city_name"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_rv"
+        android:layout_width="match_parent"
+        android:layout_below="@id/city_name"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    app:cardCornerRadius="24dp"
+    android:layout_margin="4dp"
+    android:clipToPadding="true"
+
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:background="@drawable/main_gradient"
+        android:layout_height="150dp"
+
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/sell_poinst_dark_icon" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/normal_font"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="4dp"
+            android:text="حسابات الودائع" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

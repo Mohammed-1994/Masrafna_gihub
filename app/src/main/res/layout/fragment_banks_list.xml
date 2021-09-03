@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.navigation.banks.BanksListFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/banks_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true" />
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/progress_bar"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:elevation="16dp"
+                android:visibility="gone"
+                app:SpinKit_Color="#01BBFC" />
+
+            <LinearLayout
+                android:id="@+id/seach_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="24dp"
+                android:background="@drawable/edit_text_background"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/filter_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="-48dp"
+                    android:background="@null"
+                    android:elevation="8dp"
+                    android:src="@drawable/filter_search" />
+
+
+                <EditText
+                    android:id="@+id/search_et"
+                    style="@style/hint_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="56dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/search_banks"
+                    android:inputType="text"
+                    android:paddingVertical="8dp"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:textColor="@color/black" />
+
+                <ImageButton
+                    android:id="@+id/search_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-48dp"
+                    android:layout_marginEnd="-48dp"
+                    android:background="@null"
+                    android:elevation="8dp"
+                    android:src="@drawable/ic_baseline_search_24" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chose_bank"
+                style="@style/normal_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seach_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="@string/chose_bank" />
+
+            <TextView
+                android:id="@+id/chose_bank_text"
+                style="@style/hint_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chose_bank"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="@string/see_bank_services" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/banks_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chose_bank_text"
+                android:layout_marginTop="24dp"
+                tools:listitem="@layout/services_grid_item" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

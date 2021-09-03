@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="-24dp"
+    android:background="@drawable/main_gradient"
+    tools:context=".ui.navigation.NavigationDialogFragment"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="48dp"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/nav_header_navigation_drawer"
+            layout="@layout/nav_header_navigation_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nav_header_navigation_drawer"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/home"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:drawablePadding="16dp"
+                android:text="الرئيسية"
+                style="@style/normal_font"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/user_minus"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:drawablePadding="16dp"
+                android:text="الصفحة الشخصية"
+                style="@style/normal_font"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/info"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:drawablePadding="16dp"
+                android:text="تعرف على مصرفنا"
+                style="@style/normal_font"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/marked"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:drawablePadding="16dp"
+                android:text="مفضلاتي"
+                style="@style/normal_font"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/terms_icon"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:drawablePadding="16dp"
+                android:text="شروط الخدمة"
+                style="@style/normal_font"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/icon_share"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:drawablePadding="16dp"
+                android:text="مشاركة"
+                style="@style/normal_font"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/icon_log"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:drawablePadding="16dp"
+                android:text="تسجيل خروج"
+                style="@style/normal_font"/>
+
+
+        </LinearLayout>
+        
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

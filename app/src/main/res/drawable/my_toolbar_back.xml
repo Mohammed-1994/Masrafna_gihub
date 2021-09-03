@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Top color -->
+    <item android:top="0dp">
+        <shape android:shape="rectangle">
+            <corners android:bottomRightRadius="24dp"
+                android:bottomLeftRadius="24dp"/>
+
+            <gradient
+                android:angle="90"
+                android:endColor="#1A90E3"
+                android:startColor="#01BBFC"
+                android:type="linear" />
+        </shape>
+
+    </item>
+
+    <item android:drawable="@drawable/ecllips_toolbar"
+        android:height="128dp"
+        android:gravity="bottom"/>
+
+
+</layer-list>
